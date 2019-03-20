@@ -4,23 +4,6 @@
 
   <div id="app">
 
-    <div id="mainmenu">
-      <radial-menu
-        style="margin: auto; margin-top: 300px; background-color: white"
-        :itemSize="50"
-        :radius="120"
-        :angle-restriction="360">
-          <radial-menu-item 
-            v-for="(item, index) in items" 
-            :key="index" 
-            style="background-color: white" 
-            @click="() => handleClick(item)">
-            <span>{{item}}</span>
-          </radial-menu-item>
-        </radial-menu>
-        <div style="color: rgba(0,0,0,0.6); margin-top: 16px;">{{ lastClicked }}</div>
-      </div>
-
       <video playsinline autoplay muted loop id="bgvid">
 			  <source src="./asteroids.mp4" type="video/mp4">
 		  </video>
@@ -30,26 +13,18 @@
 </template>
 
 <script>
-import RadialMenu from './components/menu.vue'
-import RadialMenuItem from './components/menuitem.vue'
-
 
 export default {
   name: 'app',
   components: {
-    RadialMenu,
-    RadialMenuItem,
   },
   data () {
     return {
-      items: ['foo', 'bar', 'hello', 'world', 'more', 'items'],
-      lastClicked: 'Click to Begin',
+
     }
   },
   methods: {
-    handleClick (item) {
-      this.lastClicked = item;
-    }
+
   }
 }
 </script>
@@ -62,6 +37,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
