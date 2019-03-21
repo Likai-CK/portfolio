@@ -1,5 +1,5 @@
 {
-  "name": "vueapp002",
+  "name": "router-app",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "Likai Kuroi <likai31197@gmail.com>",
@@ -13,15 +13,13 @@
     "document-ready": "^2.0.2",
     "postscribe": "^2.0.8",
     "vue": "^2.5.2",
-    "vue-radial-menu": "^1.1.1",
-    "vue-router": "^3.0.2",
-    "vue-script-component": "^0.1.7",
-    "vue-video-background": "^0.1.2",
-    "vue-videobg": "^2.0.0"
+    "vue-router": "^3.0.1",
+    "vue-script-component": "^0.1.7"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
+    "babel-eslint": "^8.2.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "^7.1.1",
     "babel-plugin-syntax-jsx": "^6.18.0",
@@ -51,9 +49,10 @@
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
-    "webpack": "^3.6.0",
+    "webpack": "^3.12.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^2.11.3",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
