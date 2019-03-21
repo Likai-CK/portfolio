@@ -10,8 +10,12 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "document-ready": "^2.0.2",
+    "postscribe": "^2.0.8",
     "vue": "^2.5.2",
     "vue-radial-menu": "^1.1.1",
+    "vue-router": "^3.0.2",
+    "vue-script-component": "^0.1.7",
     "vue-video-background": "^0.1.2",
     "vue-videobg": "^2.0.0"
   },
