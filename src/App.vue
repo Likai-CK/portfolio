@@ -149,23 +149,25 @@ width: 1%;
   flex-direction: row;
 }
 .footer-box-left{
-  display: flex;
+  display: inline-flex;
+  margin-top: auto;
   flex-direction: column;
   align-self: flex-start; 
   width: 325px;
   height: 270px;
-  margin-bottom: 3%;
   margin-left: 3%;
   background-color: gray;
   border: 4px solid purple;
 }
 
 .footer-box-bottom{
-  display: flex;
+  display: inline-flex;
+  margin-top: auto;
   flex-direction: column;
   width: 100%;
-  max-height: 35%;
-  justify-content:flex-end;
+  height: 50%;
+  margin-right: 3%;
+  justify-content:flex-start;
   align-items:flex-start;
   background-color: gray;
 }
