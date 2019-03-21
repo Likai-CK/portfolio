@@ -28,6 +28,15 @@
             
             <div class="right">
               <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsddasdasdasdasdadsdsdasdasdasdasdasdasdasf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
             </div>
              
           </div>
@@ -85,7 +94,6 @@ body {
   margin: 0;
   position: relative;
   width: 65%;
-  height: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -105,23 +113,26 @@ border: 1px solid green;
 
 .content {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content:space-around;
   margin-top: 2%;
   margin-left: 3%;
   margin-right: 3%; 
   margin-bottom: 2%;
-  min-height: 60%;
-  max-height: 60%;
+  min-height: 70%;
+  max-height: 70%;
   border: 1px solid red;
 }
 
-.left {
-  display: flex;
+.left {  
+  display: inline-flex;
   flex-direction: column;
   background-color: gray;
   text-align: left;
-  width: 75%;
+  min-width: 50%;
+  max-width: 50%;
+  overflow: auto;
   margin-right: 2%;
   border: 1px solid yellow;
 }
@@ -135,23 +146,25 @@ width: 1%;
 }
 
 .right {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   background-color: gray;
   text-align: right;
-  width: 75%;
+  min-width: 50%;
+  max-width: 50%;
   margin-left: 2%;
+  overflow: auto;
   border: 1px solid yellow;
 }
 
 .footer {
+  margin-top: -1%;
   display: flex;
   flex-direction: row;
+
 }
 .footer-box-left{
   display: inline-flex;
-  margin-top: auto;
-  flex-direction: column;
   align-self: flex-start; 
   width: 325px;
   height: 270px;
@@ -161,15 +174,13 @@ width: 1%;
 }
 
 .footer-box-bottom{
-  display: inline-flex;
-  margin-top: auto;
-  flex-direction: column;
+  display: flex;
   width: 100%;
-  height: 50%;
   margin-right: 3%;
   justify-content:flex-start;
   align-items:flex-start;
   background-color: gray;
+  border: 3px solid purple;
 }
 
 #app {
