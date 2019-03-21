@@ -30,13 +30,12 @@ export default {
   display: flex;
   position: relative;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content:space-between;
   margin-top: 2%;
   margin-left: 3%;
   margin-right: 3%; 
   margin-bottom: 2%;
-  min-height: 70%;
-  max-height: 70%;
+  height: 500px;
   border: 1px solid red;
 }
 
@@ -45,9 +44,8 @@ export default {
   flex-direction: column;
   background-color: gray;
   text-align: left;
-  min-width: 50%;
-  max-width: 50%;
   overflow: auto;
+  width: 55%;
   margin-right: 2%;
   border: 1px solid yellow;
 }
@@ -57,6 +55,8 @@ display: flex;
 flex-direction: column;
 background-color: white;
 width: 1%;
+margin-left: 1%;
+margin-right: 1%;
 
 }
 
@@ -65,8 +65,7 @@ width: 1%;
   flex-direction: column;
   background-color: gray;
   text-align: right;
-  min-width: 50%;
-  max-width: 50%;
+  width: 55%;
   margin-left: 2%;
   overflow: auto;
   border: 1px solid yellow;

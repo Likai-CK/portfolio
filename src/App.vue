@@ -77,10 +77,9 @@ body {
 .boxed {
   display: flex;
   flex-direction: column;
-  margin: 0;
   position: relative;
-  min-height: 55%;
   width: 65%;
+  min-height: 55%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -101,51 +100,7 @@ position: relative;
 border: 1px solid green;
 }
 
-.content {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content:space-around;
-  margin-top: 2%;
-  margin-left: 3%;
-  margin-right: 3%; 
-  margin-bottom: 2%;
-  min-height: 70%;
-  max-height: 70%;
-  border: 1px solid red;
-}
 
-.left {  
-  display: inline-flex;
-  flex-direction: column;
-  background-color: gray;
-  text-align: left;
-  min-width: 50%;
-  max-width: 50%;
-  overflow: auto;
-  margin-right: 2%;
-  border: 1px solid yellow;
-}
-
-.middle {
-display: flex;
-flex-direction: column;
-background-color: white;
-width: 1%;
-
-}
-
-.right {
-  display: inline-flex;
-  flex-direction: column;
-  background-color: gray;
-  text-align: right;
-  min-width: 50%;
-  max-width: 50%;
-  margin-left: 2%;
-  overflow: auto;
-  border: 1px solid yellow;
-}
 
 .footer {
   margin-top: -1%;
