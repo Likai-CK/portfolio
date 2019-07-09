@@ -13,6 +13,8 @@
     "document-ready": "^2.0.2",
     "postscribe": "^2.0.8",
     "vue": "^2.5.2",
+    "vue-headful": "^2.0.1",
+    "vue-meta": "^2.0.4",
     "vue-router": "^3.0.1",
     "vue-script-component": "^0.1.7"
   },

@@ -158,15 +158,11 @@ border: 1px solid green;
 
 .content {
   display: flex;
-  position: relative;
   flex-direction: row;
-  justify-content:space-around;
   margin-top: 2%;
   margin-left: 3%;
   margin-right: 3%; 
   margin-bottom: 2%;
-  min-height: 70%;
-  max-height: 70%;
   border: 1px solid red;
 }
 
