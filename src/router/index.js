@@ -6,6 +6,10 @@ import Home from '@/pages/Home'
 import Code from '@/pages/Code'
 import More from '@/pages/More'
 
+import blog from '@/components/Blog'
+import blogpost from '@/components/Blogpost'
+
+Vue.component('blog', blog); // doing vue.component is needed for the imports to do anything.
 Vue.component('vue-headful', vueHeadful); // This is for doing stuff like <title> within router views. Really annoying!
 Vue.use(Router)
 

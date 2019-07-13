@@ -5,10 +5,7 @@
               description="Homepage of Likai.Codes!"/>
 
             <div class="left">
-              <h2>Likai Kuroi</h2>
-              <h3>My blog post!</h3>
-              <p>asdasdasdasdsddsdasd</p>
-              <p>also: {{ active }} is selected.</p>
+                <blog> bloggo</blog>
             </div>
 
             <div class="middle">
@@ -32,6 +29,8 @@
 </template>
 
 <script>
+import blog from '@/components/Blog'
+
 export default {
   name: 'Home'
 }

@@ -48,6 +48,7 @@
 <script>
 import VueScriptComponent from 'vue-script-component' // This lets me run scripts inside of components straight-up. Like embeds and stuff.
 
+
 export default {
   name: 'app',
   components: {

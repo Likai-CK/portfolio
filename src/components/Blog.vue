@@ -1,34 +1,23 @@
 <template>
-          <div class="content">
-            <vue-headful
-              title="Home - Likai Codes"
-              description="Homepage of Likai.Codes!"/>
+        <div class="container">
+          <div class="blog">
+            <div class="titlebar">
 
-            <div class="left">
-              <h2>Likai Kuroi</h2>
-              <h3>My blog post!</h3>
-              <p>asdasdasdasdsddsdasd</p>
-              <p>also: {{ active }} is selected.</p>
-            </div>
+              <div class="avatar">
+                <img src='@/assets/likai_small.png'>
+              </div>
 
-            <div class="middle">
-
+              <div class="title">
+                <h2>{{ blogposts[0].id }} - {{ blogposts[0].title }}</h2>
+                <p>{{ blogposts[0].date }}</p>
+              </div>
+              
             </div>
-            
-            <div class="right">
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsddasdasdasdasdadsdsdasdasdasdasdasdasdasf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-            </div>
-             
+               <div class="content">
+                <p>{{ blogposts[0].content}}</p>
+              </div>
           </div>
+        </div>
 </template>
 
 <script>
@@ -36,13 +25,22 @@
 // Blogs attain a list of Blogposts from a source, like a text file.
 import Blogpost from '@/components/Blogpost'
 export default {
-  name: 'Blog',
-   components: {
-    Blogpost
-  },
   data () {
-    return {
-      blogposts: [] // import blogposts somehow later, perhaps from a text file.
+    return{ // the return statement is required to be able to use the variables in the html above. 
+      blogposts: [
+        {
+          title: "First Post",
+          id: 1,
+          date: "7/11/2019",
+          content: "This is my first blog post, currently testing out Vue's component system!"},
+        {
+          title: "hello again",
+          id: 2,
+          date: "7/11/2019",
+          content: "stuff here also!"
+        }
+      ]
+       // import blogposts somehow later, perhaps from a text file.
     }
   },
   methods: {
@@ -54,18 +52,50 @@ export default {
 <style>
 
 /* Default */
-.content {
+.container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.titlebar{
+justify-content:center;
+align-items:center;
+display: flex;
+flex-direction: row;
+border: 3px solid black;
+max-height: 20%;
+}
+
+
+
+.title{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid green;
+  margin: 1%;
+  line-height: 10%;
+  width: 100%;
+}
+
+.avatar{
   display: flex;
   position: relative;
   flex-direction: row;
-  justify-content:space-between;
-  margin-top: 2%;
-  margin-left: 3%;
-  margin-right: 3%; 
-  margin-bottom: 2%;
-  border: 1px solid red;
-  max-height: 60%;
-  min-height: 60%;
+  width: 100px;
+}
+img{ 
+  max-width:85%;
+  max-height:85%;
+  width: auto;
+  height: auto;
+  border: 2px solid black;
+  margin: 3%;
+}
+
+.content{
+  border: 1px solid black;
 }
 
 </style>
