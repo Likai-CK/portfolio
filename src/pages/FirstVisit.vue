@@ -1,12 +1,16 @@
 <template>
 
-          <div class="content">
+          <div class="content2">
             <vue-headful
-              title="More - Likai Codes"
-              description="More of Likai.Codes!"/>
+              title="Likai Codes"
+              description="Likai.Codes!"/>
 
             <center>
                 <img src='@/assets/likai_small.png'>
+
+                <h1> Welcome! </h1>
+                <h3>I'm a software developer, and this is my portfolio!</h3>
+                <h4>Use the above menu to navigate!</h4>
             </center>
 
           </div>
@@ -15,14 +19,14 @@
 
 <script>
 export default {
-  name: 'Home'
+
 }
 </script>
 
 <style>
 
 /* Default */
-.content {
+.content2 {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -38,7 +42,7 @@ export default {
 
 /* For 1920x1080 */
 @media screen and (max-width: 1921px){
-  .content {
+  .content2 {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -55,7 +59,7 @@ export default {
 
 /* For 1440p */
 @media screen and (min-width: 1921px) and (max-width: 2560px){
-  .content {
+  .content2 {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -71,13 +75,13 @@ export default {
 }
 
 
-.content img{ 
-  display: flex;
+.content2 img{ 
+  display: block;
   position: relative;
-  flex-direction: row;
-  max-width:20%;
-  max-height:20%;
-  border: 2px solid black;
+  border-radius: 200px;
+  max-width:15%;
+  max-height:15%;
+  border: 5px solid purple;
   margin: 2%;
 }
 
