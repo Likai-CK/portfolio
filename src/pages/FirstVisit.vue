@@ -19,7 +19,9 @@
 
 <script>
 export default {
-
+    created(){
+        setTimeout( () => this.$router.push({path: '/news'}), 5000);
+    }
 }
 </script>
 
@@ -38,6 +40,8 @@ export default {
   border: 1px solid red;
   max-height: 60%;
   min-height: 60%;
+
+
 }
 
 /* For 1920x1080 */
@@ -54,6 +58,7 @@ export default {
   border: 1px solid red;
   min-height: 400px;
   max-height: 400px;
+  
   }
 }
 
@@ -71,6 +76,7 @@ export default {
   border: 1px solid red;
   min-height: 750px;
   max-height: 750px;
+
   }
 }
 

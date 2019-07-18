@@ -6,6 +6,7 @@ import News from '@/pages/News'
 import Projects from '@/pages/Projects'
 import More from '@/pages/More'
 import FirstVisit from '@/pages/FirstVisit'
+import PageNotFound from '@/pages/PageNotFound'
 
 import blog from '@/components/Blog'
 import blogpost from '@/components/Blogpost'
@@ -15,6 +16,7 @@ Vue.component('vue-headful', vueHeadful); // This is for doing stuff like <title
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history', // remove hashtag, thanks https://github.com/vuejs/vue-router/issues/2668
   routes: [
     {
       path: '/',
@@ -40,6 +42,10 @@ export default new Router({
       path: '/more',
       name: 'More',
       component: More
+    },
+    {
+      path: '*',
+      component: PageNotFound
     }
   ]
 })
