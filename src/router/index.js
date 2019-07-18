@@ -10,10 +10,15 @@ import PageNotFound from '@/pages/PageNotFound'
 
 import blog from '@/components/Blog'
 import blogpost from '@/components/Blogpost'
+import RecentActivity from '@/components/RecentActivity'
 
+import Vuetify from 'vuetify'
+
+Vue.use(Vuetify);
 Vue.component('blog', blog); // doing vue.component is needed for the imports to do anything.
+Vue.component('RecentActivity', RecentActivity);
 Vue.component('vue-headful', vueHeadful); // This is for doing stuff like <title> within router views. Really annoying!
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   mode: 'history', // remove hashtag, thanks https://github.com/vuejs/vue-router/issues/2668

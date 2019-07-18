@@ -13,16 +13,9 @@
             </div>
             
             <div class="right">
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsddasdasdasdasdadsdsdasdasdasdasdasdasdasf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
-              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+
+              <RecentActivity>Recent activity..</RecentActivity>
+
             </div>
              
           </div>
@@ -30,9 +23,10 @@
 
 <script>
 import blog from '@/components/Blog'
+import RecentActivity from '@/components/RecentActivity'
 
 export default {
-  name: 'Home'
+
 }
 </script>
 

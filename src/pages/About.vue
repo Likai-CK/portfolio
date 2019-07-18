@@ -6,7 +6,6 @@
               description="Likai.Codes!"/>
 
             <center>
-
                 <h4>
                   I am an enthusiast who is always passionate about emerging technologies. I regularly work on web projects with HTML, CSS, and VueJS, as well as other projects using Python and Google's AI library, Tensor Flow. Security is a passion of mine, and I enjoy incorporating it into my work through backend scripts in PHP and C#. I aspire to work on projects that are useful, secure, and accessible! 
                 </h4>

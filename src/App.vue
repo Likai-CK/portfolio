@@ -1,8 +1,10 @@
 
 <template>
 
-
+<v-app> <!-- used for Vuetify components. Removing this will cause them to mess up if they're used in the
+other pages -->
   <div id="app">
+    
       <!-- no longer used
       <video playsinline autoplay muted loop id="bgvid">
 			  <source src="./asteroids.mp4" type="video/mp4">
@@ -30,7 +32,7 @@
           <router-view></router-view>
           
 
-          <div class="footer">
+          <div class="footer"> <!-- footer -->
 
             <div class="footer-box-left">
               <VueScriptComponent script='<script type="text/javascript" src="//rf.revolvermaps.com/0/0/3.js?i=5ajs75d2o2z&amp;b=0&amp;s=40&amp;m=0&amp;cl=ff00ff&amp;co=000000&amp;cd=54ff00&amp;v0=60&amp;v1=1&amp;r=1" async="async"></script>'/>
@@ -40,11 +42,12 @@
               <h4> Welcome to my portfolio! --ticker--</h4>
             </div>
 
-          </div>
+          </div> <!-- footer -->
 
-      </div>
+      </div> <!-- boxed -->
+    </div> <!-- app -->
 
-  </div>
+</v-app>
 </template>
 
 <script>
@@ -71,6 +74,8 @@ export default {
 
     
 <style>
+@import 'vuetify/dist/vuetify.min.css';
+
 html,
 body {
   margin: 0;
@@ -171,8 +176,6 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background-size: cover; 
 }
-
-</style>
 
 
 </style>

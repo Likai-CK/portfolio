@@ -13,7 +13,7 @@
             </div>
             
             <div class="right">
-              <p>maybe track gaming stuff or other things?</p>
+              <p>Soon...</p>
               <p></p>
             </div>
              

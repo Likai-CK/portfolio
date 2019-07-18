@@ -16,7 +16,8 @@
     "vue-headful": "^2.0.1",
     "vue-meta": "^2.0.4",
     "vue-router": "^3.0.1",
-    "vue-script-component": "^0.1.7"
+    "vue-script-component": "^0.1.7",
+    "vuetify": "^1.5.16"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
