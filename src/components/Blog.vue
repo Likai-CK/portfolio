@@ -3,13 +3,12 @@
           <div class="blog">
             <div class="titlebar">
 
-              <div class="avatar">
-                <img src='@/assets/likai_small.png'>
-              </div>
-
               <div class="title">
-                <h2>{{ blogposts[0].id }} - {{ blogposts[0].title }}</h2>
-                <p>{{ blogposts[0].date }}</p>
+                <img src='@/assets/likai_small.png'>
+                <div class="title-content">
+                  <h2>{{ blogposts[0].id }} - {{ blogposts[0].title }}</h2>
+                  <p>{{ blogposts[0].date }}</p>
+                </div>
               </div>
               
             </div>
@@ -59,41 +58,38 @@ export default {
 }
 
 .titlebar{
-justify-content:center;
 align-items:center;
 display: flex;
 flex-direction: row;
 border: 3px solid black;
 max-height: 20%;
+width: auto;
 }
-
-
 
 .title{
   display: flex;
-  position: relative;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: left;
   border: 1px solid green;
-  margin: 1%;
-  line-height: 10%;
+  margin: auto;
+  line-height: 5%;
   width: 100%;
 }
 
-.avatar{
+.title img{ 
   display: flex;
   position: relative;
   flex-direction: row;
-  width: 100px;
-}
-img{ 
-  max-width:85%;
-  max-height:85%;
-  width: auto;
-  height: auto;
+  max-width:20%;
+  max-height:20%;
   border: 2px solid black;
-  margin: 3%;
+  margin: 2%;
 }
 
+.title-content{
+  display: flex;
+  flex-direction: column;
+}
 .content{
   border: 1px solid black;
 }

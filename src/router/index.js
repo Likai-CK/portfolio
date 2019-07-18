@@ -2,9 +2,10 @@ import Vue from 'vue'
 import vueHeadful from 'vue-headful';
 import Router from 'vue-router'
 import About from '@/pages/About'
-import Home from '@/pages/Home'
-import Code from '@/pages/Code'
+import News from '@/pages/News'
+import Projects from '@/pages/Projects'
 import More from '@/pages/More'
+import FirstVisit from '@/pages/FirstVisit'
 
 import blog from '@/components/Blog'
 import blogpost from '@/components/Blogpost'
@@ -17,8 +18,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'FirstVisit',
+      component: FirstVisit
+    },
+    {
+      path: '/news',
+      name: 'News',
+      component: News
     },
     {
       path: '/about',
@@ -26,9 +32,9 @@ export default new Router({
       component: About
     },
     {
-      path: '/code',
-      name: 'Code',
-      component: Code
+      path: '/projects',
+      name: 'Projects',
+      component: Projects
     },
     {
       path: '/more',

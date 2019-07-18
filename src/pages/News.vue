@@ -1,11 +1,11 @@
 <template>
           <div class="content">
             <vue-headful
-              title="Code - Likai Codes"
-              description="Coding projects of Likai.Codes!"/>
+              title="News - Likai Codes"
+              description="News of Likai.Codes!"/>
+
             <div class="left">
-              <h2>Likai Kuroi</h2>
-              <h3>Code Projects!</h3>
+                <blog> bloggo</blog>
             </div>
 
             <div class="middle">
@@ -13,14 +13,24 @@
             </div>
             
             <div class="right">
-              <p>some project over here</p>
-              <p>maybe a script that monitors git commits or w/e</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsddasdasdasdasdadsdsdasdasdasdasdasdasdasf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
+              <p>afdsafdsfsfsdfasfdsfasdfsdfsdf</p>
             </div>
              
           </div>
 </template>
 
 <script>
+import blog from '@/components/Blog'
+
 export default {
   name: 'Home'
 }

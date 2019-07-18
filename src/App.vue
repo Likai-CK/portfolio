@@ -3,21 +3,23 @@
 
 
   <div id="app">
+      <!-- no longer used
       <video playsinline autoplay muted loop id="bgvid">
 			  <source src="./asteroids.mp4" type="video/mp4">
 		  </video>
+      -->
 
       <div class="boxed">
           <div class="menu">
 
             <div class="item">
-            <router-link to="/">Home</router-link>
+            <router-link to="/news">News</router-link>
             </div>
             <div class="item">
             <router-link to="/about">About</router-link>
             </div>
             <div class="item">
-              <router-link to="/code">Code</router-link>
+              <router-link to="/projects">Projects</router-link>
             </div>
             <div class="item">
               <router-link to="/more">More</router-link>
@@ -73,6 +75,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 
@@ -167,11 +170,6 @@ video#bgvid {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background-size: cover; 
-}
-
-#mainmenu {
-  position: relative;
-  top: 25%;
 }
 
 </style>
