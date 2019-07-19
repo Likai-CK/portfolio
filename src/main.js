@@ -3,8 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Vuetify from 'vuetify'
-
+import 'material-design-icons-iconfont/dist/material-design-icons.css' // for icons used in Vuetify. found at
+// https://github.com/vuetifyjs/vuetify/issues/2083
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

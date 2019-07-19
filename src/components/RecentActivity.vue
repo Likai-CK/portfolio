@@ -2,10 +2,10 @@
 <div class="RecentActivity">
 
 <!-- https://vuetifyjs.com/en/components/lists#examples used for ref-->
-  <v-layout row>
-    <v-flex xs12 sm6 offset-sm3>
+  <v-layout column>
+    <v-flex>
       <v-card>
-        <v-toolbar color="indigo" dark>
+        <v-toolbar color="purple" dark>
 
           <v-toolbar-title>Recent Activity</v-toolbar-title>
 
@@ -57,7 +57,11 @@
   }
 </script>
 
-<style>
+<!-- https://github.com/vuetifyjs/vuetify/issues/2083 we imported material-design-icons-iconfont/dist/material-design-icons.css from npm -->
+
+<style scoped>
+@import 'vuetify/dist/vuetify.min.css';
+@import 'material-design-icons-iconfont/dist/material-design-icons.css'; 
 
 
 .RecentActivity img {

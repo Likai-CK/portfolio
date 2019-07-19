@@ -74,7 +74,6 @@ export default {
 
     
 <style>
-@import 'vuetify/dist/vuetify.min.css';
 
 html,
 body {
@@ -159,22 +158,6 @@ border: 1px solid green;
   position: absolute;
   top: 0;
   left: 0;
-}
-
-video#bgvid { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover; 
 }
 
 
