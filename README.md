@@ -1,3 +1,5 @@
+## This is an old version of my portfolio that was put together from scratch in Vue. A newer, sleeker version will be created in React at a later point.
+
 # router-app
 
 > A Vue.js project
